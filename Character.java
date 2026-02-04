@@ -8,7 +8,7 @@ public class Character {
         this.maxHealth =maxHealth;
         this.maxStamina = maxStamina;
         this.health = maxHealth;
-        this.maxStamina = maxStamina;
+        this.stamina = maxStamina;
         System.out.println("Character created with " + health + "health and " + stamina +"stamina");
     }
 
@@ -20,7 +20,7 @@ public class Character {
     }
 
     public void swingSword(){
-        stamina -=10;
+        stamina -= 10;
         if (stamina <= 0){
             stamina = 0 ;
             System.out.println("Character swings the sword. Stamina is now " + stamina);
